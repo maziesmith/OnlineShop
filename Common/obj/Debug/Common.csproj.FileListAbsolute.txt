@@ -1,0 +1,10 @@
+C:\Users\ToanBN\Documents\Visual Studio 2015\Projects\OnlineShop\Common\bin\Debug\Common.dll
+C:\Users\ToanBN\Documents\Visual Studio 2015\Projects\OnlineShop\Common\bin\Debug\Common.pdb
+C:\Users\ToanBN\Documents\Visual Studio 2015\Projects\OnlineShop\Common\obj\Debug\Common.csprojResolveAssemblyReference.cache
+C:\Users\ToanBN\Documents\Visual Studio 2015\Projects\OnlineShop\Common\obj\Debug\Common.dll
+C:\Users\ToanBN\Documents\Visual Studio 2015\Projects\OnlineShop\Common\obj\Debug\Common.pdb
+H:\ASPNET TONG HOP\OnlineShop_52\Common\bin\Debug\Common.dll
+H:\ASPNET TONG HOP\OnlineShop_52\Common\bin\Debug\Common.pdb
+H:\ASPNET TONG HOP\OnlineShop_52\Common\obj\Debug\Common.csprojResolveAssemblyReference.cache
+H:\ASPNET TONG HOP\OnlineShop_52\Common\obj\Debug\Common.dll
+H:\ASPNET TONG HOP\OnlineShop_52\Common\obj\Debug\Common.pdb
