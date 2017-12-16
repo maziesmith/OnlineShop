@@ -50,11 +50,6 @@ H:\GitHub\OnlineShop\Model\bin\Debug\PagedList.Mvc.xml
 H:\GitHub\OnlineShop\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache
 H:\GitHub\OnlineShop\Model\obj\Debug\Model.dll
 H:\GitHub\OnlineShop\Model\obj\Debug\Model.pdb
-H:\GitHub\OnlineShop\Model\bin\Debug\Common.dll
-H:\GitHub\OnlineShop\Model\bin\Debug\StaticResources.dll
-H:\GitHub\OnlineShop\Model\bin\Debug\Common.pdb
-H:\GitHub\OnlineShop\Model\bin\Debug\StaticResources.pdb
-H:\GitHub\OnlineShop\Model\bin\Debug\en\StaticResources.resources.dll
 H:\ASP.NET WebForms\OnlineShop\Model\bin\Debug\Model.dll.config
 H:\ASP.NET WebForms\OnlineShop\Model\bin\Debug\Model.dll
 H:\ASP.NET WebForms\OnlineShop\Model\bin\Debug\Model.pdb

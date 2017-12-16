@@ -15,11 +15,6 @@ namespace Model.Dao
             db = new OnlineShopDbContext();
         }
 
-        public Contact GetActiveContact()
-        {
-            return db.Contacts.Single(x => x.Status == true);
-        }
-
         public int InsertFeedBack(Feedback fb)
         {
             db.Feedbacks.Add(fb);

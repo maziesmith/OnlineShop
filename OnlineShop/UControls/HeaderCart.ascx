@@ -1,7 +1,7 @@
 ﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="HeaderCart.ascx.cs" Inherits="OnlineShop.UControls.HeaderCart" %>
 <div class="cart">
     <p>
-        Chào mừng bạn đến với website <span>Giỏ hàng:</span><div id="dd" class="wrapper-dropdown-2">
+        Chào mừng bạn đến với website <span><a style="color:#E4292F" href="/Pages/CartShop">Giỏ hàng:</a></span><div id="dd" class="wrapper-dropdown-2">
             <span id="tongsoluongtronggio"><%: (Session["cartshop"] as List<OnlineShop.Models.CartItem>).Sum(m=>m.Quantity)  %></span> sản phẩm
             <ul class="dropdown">
                 <% if ((Session["cartshop"] as List<OnlineShop.Models.CartItem>).Count == 0)

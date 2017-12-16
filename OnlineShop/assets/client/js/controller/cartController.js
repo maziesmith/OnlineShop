@@ -6,9 +6,7 @@
         $('#btnContinue').off('click').on('click', function () {
             window.location.href = "/";
         });
-        $('#btnPayment').off('click').on('click', function () {
-            window.location.href = "/thanh-toan";
-        });
+     
         $('#btnUpdate').off('click').on('click', function () {
             var listProduct = $('.txtQuantity');
             var cartList = [];
@@ -20,15 +18,15 @@
                     }
                 });
             });
-
+           
             $.ajax({
-                url: '/Cart/Update',
-                data: { cartModel: JSON.stringify(cartList) },
+                url: '/Pages/CartShop/',
+                data: { action:"update", cartModel: JSON.stringify(cartList) },
                 dataType: 'json',
                 type: 'POST',
                 success: function (res) {
                     if (res.status == true) {
-                        window.location.href = "/gio-hang";
+                        window.location.href = "/Pages/CartShop/";
                     }
                 }
             })
@@ -38,7 +36,7 @@
 
 
             $.ajax({
-                url: '/Cart/DeleteAll',
+                url: '/Pages/CartShop?action=deleteall',
                 dataType: 'json',
                 type: 'POST',
                 success: function (res) {
@@ -52,8 +50,8 @@
         $('.btn-delete').off('click').on('click', function (e) {
             e.preventDefault();
             $.ajax({
-                data: { id: $(this).data('id') },
-                url: '/Cart/Delete',
+                data: { action :"delete", id: $(this).data('id') },
+                url: '/Pages/CartShop',
                 dataType: 'json',
                 type: 'POST',
                 success: function (res) {

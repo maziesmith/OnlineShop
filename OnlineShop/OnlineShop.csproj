@@ -2004,7 +2004,10 @@
     <Content Include="assets\admin\less\sb-admin-2.less" />
     <Content Include="assets\admin\less\variables.less" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Pages\Articles.aspx" />
     <Content Include="Pages\CartShop.aspx" />
+    <Content Include="Pages\CheckoutSuccess.aspx" />
+    <Content Include="Pages\PostContent.aspx" />
     <Content Include="Pages\ProductDetail.aspx" />
     <Content Include="Pages\Products.aspx" />
     <Content Include="Scripts\bootstrap.js" />
@@ -2088,12 +2091,33 @@
     <Compile Include="Models\LoginModel.cs" />
     <Compile Include="Models\ProvinceModel.cs" />
     <Compile Include="Models\RegisterModel.cs" />
+    <Compile Include="Pages\Articles.aspx.cs">
+      <DependentUpon>Articles.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Articles.aspx.designer.cs">
+      <DependentUpon>Articles.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Pages\CartShop.aspx.cs">
       <DependentUpon>CartShop.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Pages\CartShop.aspx.designer.cs">
       <DependentUpon>CartShop.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\CheckoutSuccess.aspx.cs">
+      <DependentUpon>CheckoutSuccess.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\CheckoutSuccess.aspx.designer.cs">
+      <DependentUpon>CheckoutSuccess.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\PostContent.aspx.cs">
+      <DependentUpon>PostContent.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\PostContent.aspx.designer.cs">
+      <DependentUpon>PostContent.aspx</DependentUpon>
     </Compile>
     <Compile Include="Pages\ProductDetail.aspx.cs">
       <DependentUpon>ProductDetail.aspx</DependentUpon>

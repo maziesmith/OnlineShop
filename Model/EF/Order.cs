@@ -13,18 +13,17 @@ namespace Model.EF
 
         public DateTime? CreatedDate { get; set; }
 
-        public long? CustomerID { get; set; }
 
-        [StringLength(50)]
+        [StringLength(100)]
         public string ShipName { get; set; }
 
-        [StringLength(50)]
+        [StringLength(20)]
         public string ShipMobile { get; set; }
 
-        [StringLength(50)]
+        [StringLength(200)]
         public string ShipAddress { get; set; }
 
-        [StringLength(50)]
+        [StringLength(256)]
         public string ShipEmail { get; set; }
 
         public int? Status { get; set; }

@@ -34,16 +34,9 @@ H:\GitHub\OnlineShop\OnlineShop\obj\Debug\OnlineShop.csprojResolveAssemblyRefere
 H:\GitHub\OnlineShop\OnlineShop\obj\Debug\OnlineShop.dll
 H:\GitHub\OnlineShop\OnlineShop\obj\Debug\OnlineShop.pdb
 H:\GitHub\OnlineShop\OnlineShop\bin\Model.dll
-H:\GitHub\OnlineShop\OnlineShop\bin\StaticResources.dll
 H:\GitHub\OnlineShop\OnlineShop\bin\EntityFramework.dll
-H:\GitHub\OnlineShop\OnlineShop\bin\PagedList.dll
-H:\GitHub\OnlineShop\OnlineShop\bin\Common.dll
 H:\GitHub\OnlineShop\OnlineShop\bin\Model.pdb
-H:\GitHub\OnlineShop\OnlineShop\bin\StaticResources.pdb
 H:\GitHub\OnlineShop\OnlineShop\bin\EntityFramework.xml
-H:\GitHub\OnlineShop\OnlineShop\bin\PagedList.xml
-H:\GitHub\OnlineShop\OnlineShop\bin\Common.pdb
-H:\GitHub\OnlineShop\OnlineShop\bin\en\StaticResources.resources.dll
 H:\GitHub\OnlineShop\OnlineShop\bin\EntityFramework.SqlServer.dll
 H:\GitHub\OnlineShop\OnlineShop\bin\EntityFramework.SqlServer.xml
 D:\ASP.NET WebForm\OnlineShop\OnlineShop\bin\roslyn\csc.exe

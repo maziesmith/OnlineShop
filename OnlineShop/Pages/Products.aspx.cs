@@ -11,11 +11,13 @@ namespace OnlineShop.Pages
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            Page.Title = "Sản phẩm";
             if(Request.QueryString["categoryID"] != null)
             {
                 long categoryID = long.Parse(Request.QueryString["categoryID"].ToString());
                 lvProducts.DataSourceID = "objSourceProductByCategory";
                 tieude.InnerText = "Sản phẩm "  + new CategoryDao().ViewDetail(categoryID).Name;
+                Page.Title = "Sản phẩm " + new CategoryDao().ViewDetail(categoryID).Name;
             }
         }
     }

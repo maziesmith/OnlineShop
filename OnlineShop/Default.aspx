@@ -28,7 +28,7 @@
                                         <div class="features_list">
                                             <h4>Tìm hiểu thêm về dịch vụ của chúng tôi bằng cách click vào đây</h4>
                                         </div>
-                                        <a href="/san-pham" class="button">Xem ngay</a>
+                                        <a href="/Pages/Products" class="button">Xem ngay</a>
                                     </div>
                                     <div class="clear"></div>
                                 </div>
@@ -61,7 +61,7 @@
         <asp:Repeater ID="repeaterlistNewProducts" runat="server" DataSourceID="objSourcelistNewProducts">
             <ItemTemplate>
                 <div class="grid_1_of_4 images_1_of_4">
-                    <a href="/Pages/ProductDetail.aspx?id=<%# Eval("ID") %>">
+                    <a href="/Pages/ProductDetail?id=<%# Eval("ID") %>">
                         <img src="<%# Eval("Image") %>" alt="<%# Eval("Name") %>" /></a>
                     <h2><%# Eval("Name") %></h2>
                     <div class="price-details">
@@ -69,7 +69,7 @@
                             <p><span class="rupees"><%# Eval("Price") == null ? "Liên hệ" : Eval("Price","{0:#,##0}").Replace(',','.') + "đ" %></span></p>
                         </div>
                         <div class="add-cart">
-                            <h4><a href="/Pages/CartShop.aspx?action=add&productId=<%# Eval("ID") %>&quantity=1">Thêm vào giỏ</a></h4>
+                            <h4><a href="/Pages/CartShop?action=add&productId=<%# Eval("ID") %>&quantity=1">Thêm vào giỏ</a></h4>
                         </div>
                         <div class="clear"></div>
                     </div>
@@ -96,14 +96,14 @@
         <asp:Repeater ID="repeaterlistFeatureProducts" runat="server" DataSourceID="objSourcelistFeatureProducts">
             <ItemTemplate>
                 <div class="grid_1_of_4 images_1_of_4">
-                <a href="/Pages/ProductDetail.aspx?id=<%# Eval("ID") %>"><img src="<%# Eval("Image") %>" alt="<%# Eval("Name") %>" /></a>
+                <a href="/Pages/ProductDetail?id=<%# Eval("ID") %>"><img src="<%# Eval("Image") %>" alt="<%# Eval("Name") %>" /></a>
                 <h2><%# Eval("Name") %></h2>
                 <div class="price-details">
                     <div class="price-number">
                         <p><span class="rupees"><%# Eval("Price") == null ? "Liên hệ" : Eval("Price","{0:#,##0}").Replace(',','.') + "đ" %></span></p>
                     </div>
                     <div class="add-cart">
-                        <h4><a href="/them-gio-hang?productId=<%# Eval("ID") %>&quantity=1">Thêm vào giỏ</a></h4>
+                        <h4><a href="/Pages/CartShop?action=add&productId=<%# Eval("ID") %>&quantity=1">Thêm vào giỏ</a></h4>
                     </div>
                     <div class="clear"></div>
                 </div>

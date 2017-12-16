@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Products.aspx.cs" Inherits="OnlineShop.Pages.Products" %>
+﻿<%@ Page  Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Products.aspx.cs" Inherits="OnlineShop.Pages.Products" %>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
     <div class="content">
@@ -22,7 +22,7 @@
 
             <ItemTemplate>
                 <div class="grid_1_of_4 images_1_of_4" runat="server">
-                    <a href="/Pages/ProductDetail.aspx?id=<%# Eval("ID") %>">
+                    <a href="/Pages/ProductDetail?id=<%# Eval("ID") %>">
                         <img src="<%# Eval("Image") %>" alt="<%# Eval("Name") %>" /></a>
                     <h2><%# Eval("Name") %></h2>
                     <div class="price-details">
@@ -30,7 +30,7 @@
                             <p><span class="rupees"><%# Eval("Price") == null ? "Liên hệ" : Eval("Price","{0:#,##0}").Replace(',','.') + "đ" %></span></p>
                         </div>
                         <div class="add-cart">
-                            <h4><a href="/Pages/CartShop.aspx?action=add&productId=<%# Eval("ID") %>&quantity=1">Thêm vào giỏ</a></h4>
+                            <h4><a href="/Pages/CartShop?action=add&productId=<%# Eval("ID") %>&quantity=1">Thêm vào giỏ</a></h4>
                         </div>
                         <div class="clear"></div>
                     </div>

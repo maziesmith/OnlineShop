@@ -46,23 +46,19 @@ namespace Model.Dao
                          where a.CategoryID == categoryID
                          select new
                          {
-                             CateMetaTitle = b.MetaTitle,
                              CateName = b.Name,
                              CreatedDate = a.CreatedDate,
                              ID = a.ID,
                              Images = a.Image,
                              Name = a.Name,
-                             MetaTitle = a.MetaTitle,
                              Price = a.Price
                          }).AsEnumerable().Select(x => new ProductViewModel()
                          {
-                             CateMetaTitle = x.MetaTitle,
                              CateName = x.Name,
                              CreatedDate = x.CreatedDate,
                              ID = x.ID,
                              Images = x.Images,
                              Name = x.Name,
-                             MetaTitle = x.MetaTitle,
                              Price = x.Price
                          });
             model.OrderByDescending(x => x.CreatedDate).Skip((pageIndex - 1) * pageSize).Take(pageSize);
@@ -77,23 +73,19 @@ namespace Model.Dao
                          where a.Name.Contains(keyword)
                          select new
                          {
-                             CateMetaTitle = b.MetaTitle,
                              CateName = b.Name,
                              CreatedDate = a.CreatedDate,
                              ID = a.ID,
                              Images = a.Image,
                              Name = a.Name,
-                             MetaTitle = a.MetaTitle,
                              Price = a.Price
                          }).AsEnumerable().Select(x => new ProductViewModel()
                          {
-                             CateMetaTitle = x.MetaTitle,
                              CateName = x.Name,
                              CreatedDate = x.CreatedDate,
                              ID = x.ID,
                              Images = x.Images,
                              Name = x.Name,
-                             MetaTitle = x.MetaTitle,
                              Price = x.Price
                          });
             model.OrderByDescending(x => x.CreatedDate).Skip((pageIndex - 1) * pageSize).Take(pageSize);
@@ -107,7 +99,7 @@ namespace Model.Dao
         public List<Product> ListFeatureProduct(int top)
         {
             List<Product> result = new List<Product>();
-            return db.OrderDetails.GroupBy(m => m.ProductID).OrderByDescending(x => x.Count()).Take(top).Select(m => new ProductDao().ViewDetail(m.Key)).ToList();
+            return db.OrderDetails.GroupBy(m => m.ProductID).OrderByDescending(x => x.Count()).Take(top).ToList().Select(m => new ProductDao().ViewDetail(m.Key)).ToList();
         }
         public List<Product> ListRelatedProducts(long productId)
         {
