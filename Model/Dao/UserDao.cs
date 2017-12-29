@@ -21,6 +21,10 @@ namespace Model.Dao
         {
             return db.Users.Count(x => x.UserName == userName) > 0;
         }
+        public User CheckLogin(string userName, string password)
+        {
+            return db.Users.SingleOrDefault(m => m.UserName == userName && m.Password == password);
+        }
         public bool CheckEmail(string email)
         {
             return db.Users.Count(x => x.Email == email) > 0;

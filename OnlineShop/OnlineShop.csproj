@@ -115,13 +115,22 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Admin\assets\" />
     <Folder Include="App_Data\" />
+    <Folder Include="assets\login\css\" />
+    <Folder Include="assets\login\js\" />
     <Folder Include="Data\files\" />
     <Folder Include="Data\flash\" />
     <Folder Include="Data\images\ada\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="About.aspx" />
+    <Content Include="Admin\Default.aspx" />
+    <Content Include="Admin\Pages\Menu.ascx" />
+    <Content Include="Admin\Pages\QLSanPham\Create.aspx" />
+    <Content Include="Admin\Pages\QLSanPham\Default.aspx" />
+    <Content Include="Admin\Pages\QLSanPham\Delete.aspx" />
+    <Content Include="Admin\Pages\QLSanPham\Info.aspx" />
     <Content Include="assets\admin\bower_components\bootstrap-social\bootstrap-social.css" />
     <Content Include="assets\admin\bower_components\bootstrap\dist\css\bootstrap-theme.css" />
     <Content Include="assets\admin\bower_components\bootstrap\dist\css\bootstrap-theme.min.css" />
@@ -2003,7 +2012,10 @@
     <Content Include="assets\admin\less\mixins.less" />
     <Content Include="assets\admin\less\sb-admin-2.less" />
     <Content Include="assets\admin\less\variables.less" />
+    <Content Include="Admin\Admin.Master" />
+    <Content Include="Admin\Web.config" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Login.aspx" />
     <Content Include="Pages\Articles.aspx" />
     <Content Include="Pages\CartShop.aspx" />
     <Content Include="Pages\CheckoutSuccess.aspx" />
@@ -2060,6 +2072,55 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Admin\Admin.Master.cs">
+      <DependentUpon>Admin.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Admin.Master.designer.cs">
+      <DependentUpon>Admin.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Pages\Menu.ascx.cs">
+      <DependentUpon>Menu.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Pages\Menu.ascx.designer.cs">
+      <DependentUpon>Menu.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Pages\QLSanPham\Create.aspx.cs">
+      <DependentUpon>Create.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Pages\QLSanPham\Create.aspx.designer.cs">
+      <DependentUpon>Create.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Pages\QLSanPham\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Pages\QLSanPham\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Pages\QLSanPham\Delete.aspx.cs">
+      <DependentUpon>Delete.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Pages\QLSanPham\Delete.aspx.designer.cs">
+      <DependentUpon>Delete.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Pages\QLSanPham\Info.aspx.cs">
+      <DependentUpon>Info.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Pages\QLSanPham\Info.aspx.designer.cs">
+      <DependentUpon>Info.aspx</DependentUpon>
+    </Compile>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="About.aspx.cs">
       <DependentUpon>About.aspx</DependentUpon>
@@ -2085,6 +2146,13 @@
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
     <Compile Include="Models\CartItem.cs" />
     <Compile Include="Models\DistrictModel.cs" />

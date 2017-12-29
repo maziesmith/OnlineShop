@@ -110,5 +110,51 @@ namespace Model.Dao
         {
             return db.Products.Find(id);
         }
+        public void Create(string Name, string Description, string Image, int Price, int Quantity, long CategoryID, string Detail, string CreatedBy, bool Status)
+        {
+            Product newProduct = new Product()
+            {
+                Name = Name,
+                Description = Description,
+                Image = Image,
+                Price = Price,
+                Quantity = Quantity,
+                CategoryID = CategoryID,
+                Detail = Detail,
+                CreatedDate = DateTime.Now,
+                CreatedBy = CreatedBy,
+                Status = Status
+            };
+            db.Products.Add(newProduct);
+            db.SaveChanges();
+        }
+        public void Edit(long ID,string Name, string Description, string Image, int Price, int Quantity, long CategoryID, string Detail, string ModifiedBy, bool Status)
+        {
+            Product model = ViewDetail(ID);
+            model.Name = Name;
+            model.Description = Description;
+            if(!string.IsNullOrEmpty(Image))
+            {
+                model.Image = Image;
+            }
+            model.Price = Price;
+            model.Quantity = Quantity;
+            model.CategoryID = CategoryID;
+            model.Detail = Detail;
+            model.ModifiedDate = DateTime.Now;
+            model.ModifiedBy = ModifiedBy;
+            model.Status = Status;
+            db.Entry(model).State = System.Data.Entity.EntityState.Modified;
+            db.SaveChanges();
+        }
+        public void Delete(long id)
+        {
+            Product model = db.Products.Find(id);
+            if(model != null)
+            {
+                db.Products.Remove(model);
+                db.SaveChanges();
+            }
+        }
     }
 }
