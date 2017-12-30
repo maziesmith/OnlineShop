@@ -27,7 +27,7 @@
                                   </li>
                                  <li class="">
                                         <a href="/Admin/Pages/QLHopThu">
-                                          <i class="fa fa-envelope"></i><span class="link-title">&nbsp;Hộp thư</span>
+                                          <i class="fa fa-envelope"></i><span class="link-title">&nbsp;Hộp thư website</span>
                                         </a>
                                   </li>
                                   <li class="nav-divider"></li>
