@@ -185,7 +185,7 @@
             <input type="text" name="u" id="txtTaiKhoan" runat="server" placeholder="Username" required="required" />
             <input type="password" id="txtMatKhau" name="p" runat="server" placeholder="Password" required="required" />
             <asp:Button ID="btnLogin" OnClick="btnLogin_Click" CssClass="btn btn-primary btn-block btn-large" runat="server" Text="Login" />
-            <p id="lblLoi" runat="server" style="color:#c80209">
+            <p id="lblLoi" runat="server" style="color:#fff">
                 
             </p>
         </div>

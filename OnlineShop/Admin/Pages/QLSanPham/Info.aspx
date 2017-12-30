@@ -118,7 +118,7 @@
             }
         }
     </style>
-    <link rel="stylesheet" href="/css/popupimage/popupImage.css" type="text/css" />
+    <link rel="stylesheet" href="/assets/client/css/popupimage/style.css" type="text/css" />
 
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="Content" runat="server">
@@ -164,7 +164,6 @@
                                     <label class="control-label col-lg-4">Sửa hình đại diện</label>
                                     <div class="col-lg-4">
                                         <asp:FileUpload ID="fileHinhDaiDien" CssClass="form-control" runat="server" />
-                                        <asp:RequiredFieldValidator CssClass="text-danger" Display="Dynamic" ID="RequiredFieldValidator2" runat="server" ValidationGroup="suasp" ControlToValidate="fileHinhDaiDien" ErrorMessage="Bạn chưa chọn hình đại diện!"></asp:RequiredFieldValidator>
                                     </div>
                                 </div>
 
@@ -256,7 +255,7 @@
                                 <div class="form-group">
                                     <label class="control-label col-lg-4">Hình đại diện</label>
                                     <div class="col-lg-4 labelInfo">
-                                        <img class="popupImage hidden" alt="<%# Eval("Name") %>" id="popupImage" src="/assets/client/images/<%# Eval("Image") %>" />
+                                        <img class="popupImage hidden" alt="<%# Eval("Name") %>" id="popupImage" src="<%# Eval("Image") %>" />
                                         <a href="javascript:document.getElementById('popupImage').click()">Xem hình</a>
                                         <!-- The Modal -->
                                         <div id="modalShowImage" class="modal-Image">
@@ -390,7 +389,7 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jQuery-Validation-Engine/2.6.4/jquery.validationEngine.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jQuery-Validation-Engine/2.6.4/languages/jquery.validationEngine-en.min.js"></script>
-    <script src="/assets/lib/jquery-validation/jquery.validate.js"></script>
+    <script src="/Admin/assets/lib/jquery-validation/jquery.validate.js"></script>
     <script>
         $(function () {
             Metis.formValidation();
@@ -414,9 +413,9 @@
             });
         });
     </script>
-    <script src="/ckeditor/ckeditor.js"></script>
-    <script src="/ckeditor/config.js"></script>
-    <script src="/ckfinder/ckfinder.js"></script>
+    <script src="/Admin/ckeditor/ckeditor.js"></script>
+    <script src="/Admin/ckeditor/config.js"></script>
+    <script src="/Admin/ckfinder/ckfinder.js"></script>
     <script>
         var editor = CKEDITOR.replace('DetailTextBox');
         CKFinder.setupCKEditor(editor, '/ckfinder/');

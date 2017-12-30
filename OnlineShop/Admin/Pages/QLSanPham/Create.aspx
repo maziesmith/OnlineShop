@@ -139,16 +139,16 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jQuery-Validation-Engine/2.6.4/jquery.validationEngine.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jQuery-Validation-Engine/2.6.4/languages/jquery.validationEngine-en.min.js"></script>
-    <script src="/assets/lib/jquery-validation/jquery.validate.js"></script>
+    <script src="/Admin/assets/lib/jquery-validation/jquery.validate.js"></script>
     <script>
         $(function ()
         {
            Metis.formValidation();
         });
     </script>
-    <script src="/ckeditor/ckeditor.js"></script>
-    <script src="/ckeditor/config.js"></script>
-    <script src="/ckfinder/ckfinder.js"></script>
+    <script src="/Admin/ckeditor/ckeditor.js"></script>
+    <script src="/Admin/ckeditor/config.js"></script>
+    <script src="/Admin/ckfinder/ckfinder.js"></script>
     <script>
         var editor = CKEDITOR.replace('DetailTextBox');
         CKFinder.setupCKEditor(editor, '/ckfinder/');

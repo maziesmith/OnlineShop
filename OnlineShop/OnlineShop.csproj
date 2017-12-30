@@ -116,6 +116,8 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Admin\assets\" />
+    <Folder Include="Admin\ckeditor\" />
+    <Folder Include="Admin\ckfinder\" />
     <Folder Include="App_Data\" />
     <Folder Include="assets\login\css\" />
     <Folder Include="assets\login\js\" />
@@ -127,6 +129,7 @@
     <Content Include="About.aspx" />
     <Content Include="Admin\Default.aspx" />
     <Content Include="Admin\Pages\Menu.ascx" />
+    <Content Include="Admin\Pages\QLDonHang\Default.aspx" />
     <Content Include="Admin\Pages\QLSanPham\Create.aspx" />
     <Content Include="Admin\Pages\QLSanPham\Default.aspx" />
     <Content Include="Admin\Pages\QLSanPham\Delete.aspx" />
@@ -1552,6 +1555,7 @@
     <Content Include="assets\client\css\font-awesome.min.css" />
     <Content Include="assets\client\css\global.css" />
     <Content Include="assets\client\css\jquery-ui.css" />
+    <Content Include="assets\client\css\popupimage\style.css" />
     <Content Include="assets\client\css\slider.css" />
     <Content Include="assets\client\css\style.css" />
     <Content Include="assets\client\data\Provinces_Data.xml" />
@@ -2014,6 +2018,7 @@
     <Content Include="assets\admin\less\variables.less" />
     <Content Include="Admin\Admin.Master" />
     <Content Include="Admin\Web.config" />
+    <Content Include="Admin\Pages\QLDonHang\Edit.ashx" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Login.aspx" />
     <Content Include="Pages\Articles.aspx" />
@@ -2092,6 +2097,16 @@
     </Compile>
     <Compile Include="Admin\Pages\Menu.ascx.designer.cs">
       <DependentUpon>Menu.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Pages\QLDonHang\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Pages\QLDonHang\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Pages\QLDonHang\Edit.ashx.cs">
+      <DependentUpon>Edit.ashx</DependentUpon>
     </Compile>
     <Compile Include="Admin\Pages\QLSanPham\Create.aspx.cs">
       <DependentUpon>Create.aspx</DependentUpon>

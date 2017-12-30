@@ -29,6 +29,9 @@ namespace Model.EF
 
         public DateTime? CreatedDate { get; set; }
 
+        [StringLength(50)]
+        public string Image { get; set; }
+
         public bool Status { get; set; }
     }
 }

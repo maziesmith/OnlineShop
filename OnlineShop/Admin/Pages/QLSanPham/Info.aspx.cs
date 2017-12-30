@@ -27,9 +27,9 @@ namespace OnlineShop.Admin.Pages.QLSanPham
                 string extend = fInfole.Extension;
                 if (extend == ".jpg" || extend == ".jpeg" || extend == ".png")
                 {
-                    string hinhDaiDienMoi = DateTime.Now.Ticks.ToString() + extend;
+                    string hinhDaiDienMoi = "/assets/client/images/" + DateTime.Now.Ticks.ToString() + extend;
                     objSourceSanPham.UpdateParameters["Image"].DefaultValue = hinhDaiDienMoi;
-                    f.SaveAs(Server.MapPath("~/assets/client/images/" + hinhDaiDienMoi));
+                    f.SaveAs(Server.MapPath("~"+ hinhDaiDienMoi));
                 }
             }
             else
