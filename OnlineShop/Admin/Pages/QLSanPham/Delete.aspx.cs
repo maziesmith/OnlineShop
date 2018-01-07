@@ -12,10 +12,10 @@ namespace OnlineShop.Admin.Pages.QLSanPham
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            int maSP = int.Parse(Request.QueryString["maSP"].ToString());
+            int id = int.Parse(Request.QueryString["id"].ToString());
             ProductDao productDao = new ProductDao();
-            productDao.Delete(maSP);
-            Response.Redirect("/Admin/Pages/QLSanPham", false);
+            productDao.Delete(id);
+            Response.Redirect("Default.aspx", false);
         }
     }
 }

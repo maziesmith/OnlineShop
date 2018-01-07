@@ -110,7 +110,7 @@ namespace Model.Dao
         {
             return db.Products.Find(id);
         }
-        public void Create(string Name, string Description, string Image, int Price, int Quantity, long CategoryID, string Detail, string CreatedBy, bool Status)
+        public void Create(string Name, string Description, string Image, Decimal Price, int Quantity, long CategoryID, string Detail, string CreatedBy, bool Status)
         {
             Product newProduct = new Product()
             {
@@ -128,7 +128,7 @@ namespace Model.Dao
             db.Products.Add(newProduct);
             db.SaveChanges();
         }
-        public void Edit(long ID,string Name, string Description, string Image, int Price, int Quantity, long CategoryID, string Detail, string ModifiedBy, bool Status)
+        public void Edit(long ID,string Name, string Description, string Image, Decimal Price, int Quantity, long CategoryID, string Detail, string ModifiedBy, bool Status)
         {
             Product model = ViewDetail(ID);
             model.Name = Name;

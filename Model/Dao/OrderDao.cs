@@ -20,5 +20,15 @@ namespace Model.Dao
             db.SaveChanges();
             return order.ID;
         }
+        public void Edit(long ID)
+        {
+            Order order = db.Orders.Find(ID);
+            if(order != null)
+            {
+                order.Status = order.Status == 1 ? 0 : 1;
+                db.Entry(order).State = System.Data.Entity.EntityState.Modified;
+                db.SaveChanges();
+            }
+        }
     }
 }

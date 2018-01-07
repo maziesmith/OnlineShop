@@ -21,25 +21,13 @@
                                     </ul>
                                   </li>
                                   <li class="">
-                                    <a href="javascript:;">
-                                      <i class="fa fa-file-o"></i>
-                                      <span class="link-title">QL Bài viết</span>
-                                      <span class="fa arrow"></span>
-                                    </a>
-                                    <ul class="collapse">
-                                      <li>
-                                        <a href="/Admin/Pages/QLBaiViet/Default.aspx">
-                                          <i class="fa fa-list"></i>&nbsp; Xem danh sách </a>
-                                      </li>
-                                      <li>
-                                        <a href="/Admin/Pages/QLBaiViet/Create.aspx">
-                                          <i class="fa fa-plus"></i>&nbsp; Thêm bài viết </a>
-                                      </li>
-                                    </ul>
+                                        <a href="/Admin/Pages/QLDonHang">
+                                          <i class="fa fa-ship"></i><span class="link-title">&nbsp;QL Đơn hàng</span>
+                                        </a>
                                   </li>
                                  <li class="">
                                         <a href="/Admin/Pages/QLHopThu">
-                                          <i class="fa fa-envelope"></i><span class="link-title">&nbsp;Hộp thư</span>
+                                          <i class="fa fa-envelope"></i><span class="link-title">&nbsp;Hộp thư website</span>
                                         </a>
                                   </li>
                                   <li class="nav-divider"></li>
