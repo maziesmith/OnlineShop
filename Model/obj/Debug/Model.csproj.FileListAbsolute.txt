@@ -69,3 +69,17 @@ H:\ASP.NET WebForms\OnlineShop\Model\bin\Debug\en\StaticResources.resources.dll
 H:\ASP.NET WebForms\OnlineShop\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache
 H:\ASP.NET WebForms\OnlineShop\Model\obj\Debug\Model.dll
 H:\ASP.NET WebForms\OnlineShop\Model\obj\Debug\Model.pdb
+D:\GitHub\OnlineShop\Model\bin\Debug\Model.dll.config
+D:\GitHub\OnlineShop\Model\bin\Debug\Model.dll
+D:\GitHub\OnlineShop\Model\bin\Debug\Model.pdb
+D:\GitHub\OnlineShop\Model\bin\Debug\EntityFramework.dll
+D:\GitHub\OnlineShop\Model\bin\Debug\EntityFramework.SqlServer.dll
+D:\GitHub\OnlineShop\Model\bin\Debug\PagedList.dll
+D:\GitHub\OnlineShop\Model\bin\Debug\PagedList.Mvc.dll
+D:\GitHub\OnlineShop\Model\bin\Debug\EntityFramework.xml
+D:\GitHub\OnlineShop\Model\bin\Debug\EntityFramework.SqlServer.xml
+D:\GitHub\OnlineShop\Model\bin\Debug\PagedList.xml
+D:\GitHub\OnlineShop\Model\bin\Debug\PagedList.Mvc.xml
+D:\GitHub\OnlineShop\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache
+D:\GitHub\OnlineShop\Model\obj\Debug\Model.dll
+D:\GitHub\OnlineShop\Model\obj\Debug\Model.pdb

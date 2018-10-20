@@ -2022,6 +2022,7 @@
     <Content Include="Admin\Admin.Master" />
     <Content Include="Admin\Web.config" />
     <Content Include="Admin\Pages\QLDonHang\Edit.ashx" />
+    <None Include="Properties\PublishProfiles\publish.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Login.aspx" />
     <Content Include="Logout.aspx" />
